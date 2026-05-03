@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Amrata Dental Clinic | Gentle Care, Confident Smiles | Jagatpura, Jaipur</title>
+    <meta name="description"
+        content="Dr. Amrata Srivastava — BDS (Kerala), specialist in Implants, Root Canal, Dentures, Crown & Bridges. Book your appointment at our Jagatpura, Jaipur clinic.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { teal: { 50: '#F0FDFA', 100: '#CCFBF1', 600: '#0D9488', 700: '#0F766E' }, amber: { 100: '#FEF3C7', 600: '#D97706' }, stone: { 50: '#FAFAF9', 100: '#F5F5F4', 200: '#E7E5E4', 400: '#A8A29E', 500: '#78716C', 600: '#57534E', 800: '#292524', 900: '#1C1917' } }, fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] } } } }</script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+            <a href="#"
+                class="nav-logo font-serif font-bold text-xl md:text-2xl text-teal-700 transition-colors flex items-center gap-2">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M12 2C9.5 2 7.5 3.5 6.5 5.5c-1 2-1 4.5 0 7 1 2.5 3 5 5.5 7 2.5-2 4.5-4.5 5.5-7 1-2.5 1-5 0-7C16.5 3.5 14.5 2 12 2z" />
+                </svg>
+                Dr. Amrata Dental
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home"
+                    class="nav-link text-sm font-medium text-stone-600 hover:text-teal-600 transition-colors">Home</a>
+                <a href="#about"
+                    class="nav-link text-sm font-medium text-stone-600 hover:text-teal-600 transition-colors">About</a>
+                <a href="#services"
+                    class="nav-link text-sm font-medium text-stone-600 hover:text-teal-600 transition-colors">Services</a>
+                <a href="#reviews"
+                    class="nav-link text-sm font-medium text-stone-600 hover:text-teal-600 transition-colors">Reviews</a>
+                <a href="#gallery"
+                    class="nav-link text-sm font-medium text-stone-600 hover:text-teal-600 transition-colors">Gallery</a>
+                <a href="#contact"
+                    class="nav-link text-sm font-medium text-stone-600 hover:text-teal-600 transition-colors">Contact</a>
+                <a href="https://wa.me/918591891766?text=Hi%20Dr.%20Amrata%2C%20I%27d%20like%20to%20book%20an%20appointment."
+                    target="_blank"
+                    class="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-teal-600/20">Book
+                    Appointment</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-stone-700 p-2" aria-label="Open menu"><i data-lucide="menu"
+                    class="w-6 h-6"></i></button>
+        </div>
+    </nav>
+
+    <!-- MOBILE OVERLAY -->
+    <div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-black/50 z-40"></div>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-50 shadow-2xl p-6">
+        <div class="flex justify-between items-center mb-8">
+            <span class="font-serif font-bold text-lg text-teal-700">Menu</span>
+            <button id="menu-close" class="p-2 text-stone-500" aria-label="Close menu"><i data-lucide="x"
+                    class="w-6 h-6"></i></button>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="#home" class="mobile-nav-link text-stone-700 font-medium py-2 border-b border-stone-100">Home</a>
+            <a href="#about" class="mobile-nav-link text-stone-700 font-medium py-2 border-b border-stone-100">About</a>
+            <a href="#services"
+                class="mobile-nav-link text-stone-700 font-medium py-2 border-b border-stone-100">Services</a>
+            <a href="#reviews"
+                class="mobile-nav-link text-stone-700 font-medium py-2 border-b border-stone-100">Reviews</a>
+            <a href="#gallery"
+                class="mobile-nav-link text-stone-700 font-medium py-2 border-b border-stone-100">Gallery</a>
+            <a href="#contact"
+                class="mobile-nav-link text-stone-700 font-medium py-2 border-b border-stone-100">Contact</a>
+            <a href="https://wa.me/918591891766?text=Hi%20Dr.%20Amrata%2C%20I%27d%20like%20to%20book%20an%20appointment."
+                target="_blank" class="bg-teal-600 text-white text-center py-3 rounded-lg font-semibold mt-4">Book
+                Appointment</a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20 pb-12">
+        <div
+            class="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div class="order-2 md:order-1 text-center md:text-left">
+                <div
+                    class="inline-flex items-center gap-2 bg-teal-50 text-teal-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6 border border-teal-100">
+                    <i data-lucide="award" class="w-4 h-4"></i> BDS (Kerala) · Reg: A-4560
+                </div>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 mb-4 leading-tight">Dr.
+                    Amrata<br><span class="text-teal-600">Srivastava</span></h1>
+                <p class="text-lg sm:text-xl text-stone-500 mb-2 font-medium">Specialist — Implants · RCT · Crown &
+                    Bridges</p>
+                <p class="text-2xl sm:text-3xl font-serif text-amber-600 mb-8 italic">"Gentle care. Confident smiles."
+                </p>
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a href="https://wa.me/918591891766?text=Hi%20Dr.%20Amrata%2C%20I%27d%20like%20to%20book%20an%20appointment."
+                        target="_blank"
+                        class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-xl font-semibold transition-colors shadow-lg shadow-green-500/20">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.72-1.396A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.592-.838-6.316-2.234l-.44-.362-3.197.946.876-3.304-.38-.458A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a href="tel:+918591891766"
+                        class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors shadow-lg shadow-teal-600/20">
+                        <i data-lucide="phone" class="w-5 h-5"></i> Call Now
+                    </a>
+                    <a href="mailto:hello@dramratadental.in"
+                        class="inline-flex items-center gap-2 border-2 border-amber-500 text-amber-700 hover:bg-amber-50 px-6 py-3 rounded-xl font-semibold transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5"></i> Email
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <img src="images/unnamed (2).jpg" alt="Dr. Amrata Srivastava performing dental treatment" width="500"
+                    height="600" class="hero-photo w-72 sm:w-80 lg:w-[420px] rounded-2xl object-cover aspect-[4/5]">
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="stats-bar py-10 md:py-14">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center text-white">
+            <div class="fade-up">
+                <div class="text-3xl md:text-4xl font-bold mb-1"><span data-count="8" data-suffix="+">0</span></div>
+                <p class="text-teal-100 text-sm font-medium">Years Experience</p>
+            </div>
+            <div class="fade-up" style="transition-delay:0.1s">
+                <div class="text-3xl md:text-4xl font-bold mb-1"><span data-count="3000" data-suffix="+">0</span></div>
+                <p class="text-teal-100 text-sm font-medium">Patients Treated</p>
+            </div>
+            <div class="fade-up" style="transition-delay:0.2s">
+                <div class="text-3xl md:text-4xl font-bold mb-1"><span data-count="4.9" data-suffix="★">0</span></div>
+                <p class="text-teal-100 text-sm font-medium">Google Rating</p>
+            </div>
+            <div class="fade-up" style="transition-delay:0.3s">
+                <div class="text-3xl md:text-4xl font-bold mb-1"><span data-count="500" data-suffix="+">0</span></div>
+                <p class="text-teal-100 text-sm font-medium">Smile Makeovers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div class="fade-left">
+                <img src="images/unnamed.jpg" alt="Dr. Amrata Srivastava treating a young patient with care" width="500"
+                    height="600" loading="lazy" class="rounded-2xl object-cover w-full aspect-[4/5] shadow-xl">
+            </div>
+            <div class="fade-right">
+                <p class="text-teal-600 font-semibold text-sm uppercase tracking-wider mb-2">About the Doctor</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-4">Meet Dr. Amrata Srivastava
+                </h2>
+                <div class="section-divider mb-6"></div>
+                <p class="text-stone-600 leading-relaxed mb-4">With over 8 years of dedicated practice in dentistry, Dr.
+                    Amrata Srivastava has built a reputation for providing gentle, patient-centered dental care in
+                    Jaipur. A graduate in BDS from Kerala, she brings expertise in modern dental techniques combined
+                    with a compassionate approach that puts every patient at ease.</p>
+                <p class="text-stone-600 leading-relaxed mb-6">Specializing in Dental Implants, Root Canal Treatments,
+                    Dentures, and Crown & Bridges, Dr. Amrata is committed to helping you achieve a healthy, confident
+                    smile. Her clinic is equipped with the latest dental technology to ensure precise, painless
+                    treatments.</p>
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3"><i data-lucide="graduation-cap"
+                            class="w-5 h-5 text-teal-600"></i><span class="text-stone-700 font-medium">BDS
+                            (Kerala)</span></div>
+                    <div class="flex items-center gap-3"><i data-lucide="badge-check"
+                            class="w-5 h-5 text-teal-600"></i><span class="text-stone-700 font-medium">Registered:
+                            A-4560</span></div>
+                    <div class="flex items-center gap-3"><i data-lucide="heart-pulse"
+                            class="w-5 h-5 text-teal-600"></i><span class="text-stone-700 font-medium">Specialist:
+                            Implants, RCT, Crown & Bridges</span></div>
+                    <div class="flex items-center gap-3"><i data-lucide="calendar"
+                            class="w-5 h-5 text-teal-600"></i><span class="text-stone-700 font-medium">8+ Years of
+                            Clinical Experience</span></div>
+                </div>
+                <div class="flex gap-3">
+                    <img src="images/unnamed (1).jpg"
+                        alt="Dr. Amrata's dental certifications and diplomas displayed on clinic wall" width="200"
+                        height="120" loading="lazy" class="rounded-lg object-cover w-32 h-20 border border-stone-200">
+                    <div class="flex items-center text-sm text-stone-500 italic">Board-certified with multiple advanced
+                        training certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16 md:py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-up">
+                <p class="text-teal-600 font-semibold text-sm uppercase tracking-wider mb-2">What We Offer</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-4">Our Dental Services</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card bg-white rounded-2xl p-6 border border-stone-100 shadow-sm fade-up">
+                    <div class="service-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i
+                            data-lucide="heart-pulse" class="w-7 h-7 text-teal-600"></i></div>
+                    <h3 class="font-bold text-lg text-stone-800 mb-2">Root Canal Treatment</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Painless root canal procedures using advanced
+                        rotary instruments and digital imaging for precise, comfortable treatment.</p>
+                </div>
+                <div class="service-card bg-white rounded-2xl p-6 border border-stone-100 shadow-sm fade-up"
+                    style="transition-delay:0.1s">
+                    <div class="service-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i
+                            data-lucide="pin" class="w-7 h-7 text-teal-600"></i></div>
+                    <h3 class="font-bold text-lg text-stone-800 mb-2">Dental Implants</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Permanent tooth replacement with titanium
+                        implants. Natural-looking results that restore your smile and confidence.</p>
+                </div>
+                <div class="service-card bg-white rounded-2xl p-6 border border-stone-100 shadow-sm fade-up"
+                    style="transition-delay:0.2s">
+                    <div class="service-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i
+                            data-lucide="smile" class="w-7 h-7 text-teal-600"></i></div>
+                    <h3 class="font-bold text-lg text-stone-800 mb-2">Dentures</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Custom-fitted full and partial dentures crafted
+                        for comfort and a natural appearance. Eat, speak, and smile with ease.</p>
+                </div>
+                <div class="service-card bg-white rounded-2xl p-6 border border-stone-100 shadow-sm fade-up"
+                    style="transition-delay:0.1s">
+                    <div class="service-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i
+                            data-lucide="crown" class="w-7 h-7 text-teal-600"></i></div>
+                    <h3 class="font-bold text-lg text-stone-800 mb-2">Crown &amp; Bridges</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Durable ceramic and zirconia crowns and bridges
+                        that blend seamlessly with your natural teeth for a flawless smile.</p>
+                </div>
+                <div class="service-card bg-white rounded-2xl p-6 border border-stone-100 shadow-sm fade-up"
+                    style="transition-delay:0.2s">
+                    <div class="service-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i
+                            data-lucide="sun" class="w-7 h-7 text-teal-600"></i></div>
+                    <h3 class="font-bold text-lg text-stone-800 mb-2">Teeth Whitening</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Professional in-office whitening treatments that
+                        brighten your teeth by several shades in just one visit.</p>
+                </div>
+                <div class="service-card bg-white rounded-2xl p-6 border border-stone-100 shadow-sm fade-up"
+                    style="transition-delay:0.3s">
+                    <div class="service-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i
+                            data-lucide="stethoscope" class="w-7 h-7 text-teal-600"></i></div>
+                    <h3 class="font-bold text-lg text-stone-800 mb-2">General Dentistry</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed">Comprehensive dental check-ups, cleanings,
+                        fillings, and preventive care for the whole family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-up">
+                <p class="text-teal-600 font-semibold text-sm uppercase tracking-wider mb-2">Testimonials</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-4">What Our Patients Say</h2>
+                <div class="section-divider mx-auto mb-6"></div>
+                <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-5 py-2">
+                    <svg class="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z" />
+                    </svg>
+                    <span class="font-bold text-stone-800" id="rating-badge">4.9</span>
+                    <span class="text-stone-500 text-sm">on Google</span>
+                </div>
+            </div>
+            <div id="reviews-container"
+                class="reviews-scroll flex gap-6 overflow-x-auto pb-4 md:grid md:grid-cols-3 md:overflow-visible">
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-teal-50 to-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-5 gap-10 items-center">
+            <div class="md:col-span-3 fade-left">
+                <div class="quote-mark leading-none mb-[-2rem]">"</div>
+                <blockquote
+                    class="font-serif text-xl md:text-2xl text-stone-700 leading-relaxed italic mb-6 border-l-4 border-teal-500 pl-6">
+                    I believe every patient deserves to be heard, understood, and treated with the utmost care.
+                    Dentistry isn't just about fixing teeth — it's about giving people the confidence to smile freely.
+                    When you walk into my clinic, you're not just a patient — you're family.
+                </blockquote>
+                <div class="flex items-center gap-4">
+                    <img src="images/unnamed (2).jpg" alt="Dr. Amrata Srivastava" width="56" height="56" loading="lazy"
+                        class="w-14 h-14 rounded-full object-cover border-2 border-teal-200">
+                    <div>
+                        <p class="font-bold text-stone-800">Dr. Amrata Srivastava</p>
+                        <p class="text-sm text-stone-500">BDS (Kerala) · Founder, Dr. Amrata Dental Clinic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-2 fade-right hidden md:block">
+                <img src="images/unnamed.jpg" alt="Dr. Amrata caring for a young patient" width="400" height="480"
+                    loading="lazy" class="rounded-2xl object-cover w-full aspect-[4/5] shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-up">
+                <p class="text-teal-600 font-semibold text-sm uppercase tracking-wider mb-2">Our Clinic</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-4">Photo Gallery</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 fade-up">
+                <div class="gallery-item aspect-[4/3]"><img src="images/2025-01-09.jpg"
+                        alt="Dr. Amrata Dental Clinic exterior with signboard" width="400" height="300" loading="lazy">
+                </div>
+                <div class="gallery-item aspect-[4/3]"><img src="images/2022-11-16.jpg"
+                        alt="Modern dental chair and equipment inside the clinic" width="400" height="300"
+                        loading="lazy"></div>
+                <div class="gallery-item aspect-[4/3]"><img src="images/unnamed (1).jpg"
+                        alt="Wall of dental certifications and diplomas" width="400" height="300" loading="lazy"></div>
+                <div class="gallery-item aspect-[4/3]"><img src="images/unnamed (2).jpg"
+                        alt="Dr. Amrata performing dental procedure on adult patient" width="400" height="300"
+                        loading="lazy"></div>
+                <div class="gallery-item aspect-[4/3] md:col-span-2"><img src="images/unnamed.jpg"
+                        alt="Dr. Amrata treating a young patient with gentle care" width="800" height="300"
+                        loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 md:py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-up">
+                <p class="text-teal-600 font-semibold text-sm uppercase tracking-wider mb-2">Get In Touch</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-4">Visit Our Clinic</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 fade-up">
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-stone-100">
+                    <div class="space-y-5 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-teal-600"></i></div>
+                            <div>
+                                <p class="font-semibold text-stone-800 mb-1">Address</p>
+                                <p class="text-stone-500 text-sm">O2, Buttercup Apartment, Vinayak Enclave, Way to VIT
+                                    Campus, Jagatpura, Jaipur, Rajasthan 302017</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-5 h-5 text-teal-600"></i></div>
+                            <div>
+                                <p class="font-semibold text-stone-800 mb-1">Phone</p><a href="tel:+918591891766"
+                                    class="text-teal-600 hover:underline text-sm block">+91 85918 91766</a><a
+                                    href="tel:+919057064789" class="text-teal-600 hover:underline text-sm block">+91
+                                    90570 64789</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5 text-teal-600"></i></div>
+                            <div>
+                                <p class="font-semibold text-stone-800 mb-1">Email</p><a
+                                    href="mailto:hello@dramratadental.in"
+                                    class="text-teal-600 hover:underline text-sm">hello@dramratadental.in</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-stone-800 mb-1">WhatsApp</p><a
+                                    href="https://wa.me/918591891766?text=Hi%20Dr.%20Amrata%2C%20I%27d%20like%20to%20book%20an%20appointment."
+                                    target="_blank" class="text-green-600 hover:underline text-sm">Send a message</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-stone-800 mb-3">Working Hours</h3>
+                    <table class="w-full text-sm">
+                        <tbody>
+                            <tr id="hours-monday" class="border-b border-stone-100">
+                                <td class="py-2 text-stone-600">Monday</td>
+                                <td class="py-2 text-right text-stone-800 font-medium">10 AM – 1 PM &amp; 5 PM – 8 PM
+                                </td>
+                            </tr>
+                            <tr id="hours-tuesday" class="border-b border-stone-100">
+                                <td class="py-2 text-stone-600">Tuesday</td>
+                                <td class="py-2 text-right text-stone-800 font-medium">10 AM – 1 PM &amp; 5 PM – 8 PM
+                                </td>
+                            </tr>
+                            <tr id="hours-wednesday" class="border-b border-stone-100">
+                                <td class="py-2 text-stone-600">Wednesday</td>
+                                <td class="py-2 text-right text-stone-800 font-medium">10 AM – 1 PM &amp; 5 PM – 8 PM
+                                </td>
+                            </tr>
+                            <tr id="hours-thursday" class="border-b border-stone-100">
+                                <td class="py-2 text-stone-600">Thursday</td>
+                                <td class="py-2 text-right text-stone-800 font-medium">10 AM – 1 PM &amp; 5 PM – 8 PM
+                                </td>
+                            </tr>
+                            <tr id="hours-friday" class="border-b border-stone-100">
+                                <td class="py-2 text-stone-600">Friday</td>
+                                <td class="py-2 text-right text-stone-800 font-medium">10 AM – 1 PM &amp; 5 PM – 8 PM
+                                </td>
+                            </tr>
+                            <tr id="hours-saturday" class="border-b border-stone-100">
+                                <td class="py-2 text-stone-600">Saturday</td>
+                                <td class="py-2 text-right text-stone-800 font-medium">10 AM – 1 PM &amp; 5 PM – 8 PM
+                                </td>
+                            </tr>
+                            <tr id="hours-sunday">
+                                <td class="py-2 text-stone-600">Sunday</td>
+                                <td class="py-2 text-right text-red-500 font-medium">Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-stone-100 h-[400px] md:h-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5!2d75.8668331!3d26.8100965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc8475d638185%3A0x3a71d3ffa766ff0b!2sDr.%20Amrata%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1714000000000"
+                        width="100%" height="100%" style="border:0;min-height:400px" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Dr. Amrata Dental Clinic location on Google Maps"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="font-serif font-bold text-lg mb-3 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 2C9.5 2 7.5 3.5 6.5 5.5c-1 2-1 4.5 0 7 1 2.5 3 5 5.5 7 2.5-2 4.5-4.5 5.5-7 1-2.5 1-5 0-7C16.5 3.5 14.5 2 12 2z" />
+                        </svg>
+                        Dr. Amrata Dental
+                    </h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">Gentle care. Confident smiles. Your trusted dental
+                        clinic in Jagatpura, Jaipur.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Quick Links</h4>
+                    <div class="space-y-2 text-sm">
+                        <a href="#home" class="block text-stone-400 hover:text-teal-400 transition-colors">Home</a>
+                        <a href="#about" class="block text-stone-400 hover:text-teal-400 transition-colors">About</a>
+                        <a href="#services"
+                            class="block text-stone-400 hover:text-teal-400 transition-colors">Services</a>
+                        <a href="#contact"
+                            class="block text-stone-400 hover:text-teal-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Follow Us</h4>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-stone-800 hover:bg-teal-600 flex items-center justify-center transition-colors"
+                            aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-stone-800 hover:bg-teal-600 flex items-center justify-center transition-colors"
+                            aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="https://www.google.com/maps/place/Dr.+Amrata+Dental+Clinic/@26.8100965,75.8668331,17z"
+                            target="_blank"
+                            class="w-10 h-10 rounded-lg bg-stone-800 hover:bg-teal-600 flex items-center justify-center transition-colors"
+                            aria-label="Google Maps"><i data-lucide="map" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 pt-6 text-center text-stone-500 text-sm">
+                &copy; 2026 Dr. Amrata Dental Clinic. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+        <img id="lightbox-img" src="" alt="Gallery image enlarged view" width="900" height="600">
+        <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+    </div>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/918591891766?text=Hi%20Dr.%20Amrata%2C%20I%27d%20like%20to%20book%20an%20appointment."
+        target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.72-1.396A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.592-.838-6.316-2.234l-.44-.362-3.197.946.876-3.304-.38-.458A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+        </svg>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
