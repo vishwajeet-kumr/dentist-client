@@ -1,0 +1,21 @@
+{
+  "name": "Dr. Amrata Dental Clinic",
+  "short_name": "Dr. Amrata Dental",
+  "description": "Trusted dental clinic in Jagatpura, Jaipur. Specialising in Implants, Root Canal, and Smile Makeovers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF9",
+  "theme_color": "#0D9488",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
